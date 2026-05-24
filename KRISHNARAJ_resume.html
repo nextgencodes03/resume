@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Krishnaraj D — Senior Frontend Engineer</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #0b5fff;
+    --rule: #d0d4dc;
+  }
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: var(--ink);
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.32;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16mm 14mm 14mm;
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 21pt;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  header h1 .title {
+    font-size: 12pt;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  header h1 .title::before {
+ 
+    color: var(--rule);
+  }
+  header .contact {
+    margin: 0 0 4px;
+    font-size: 9.5pt;
+    color: var(--muted);
+  }
+  header .contact span + span::before {
+    content: "  \2022  ";
+    color: var(--rule);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 8px 0;
+  }
+  h2 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: var(--accent);
+    margin: 10px 0 4px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+  }
+  h3 {
+    font-size: 10.5pt;
+    margin: 0;
+  }
+  .role {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin: 6px 0 2px;
+    page-break-inside: avoid;
+  }
+  .role .dates {
+    font-size: 9.5pt;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  ul { margin: 2px 0 4px; padding-left: 18px; }
+  li { margin: 1px 0; }
+  p { margin: 2px 0; }
+  section { page-break-inside: avoid; }
+  .skills { width: 100%; border-collapse: collapse; font-size: 9.75pt; }
+  .skills td { padding: 2px 8px 2px 0; vertical-align: top; }
+  .skills td.label { width: 110px; color: var(--muted); font-weight: 600; }
+  .placeholder {
+    color: #b35c00;
+    background: #fff5e6;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-style: italic;
+  }
+  @media print {
+    main { padding: 0; max-width: none; }
+    a { color: inherit; text-decoration: none; }
+    .placeholder { background: transparent; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Krishnaraj D<span class="title">Senior Frontend Engineer</span></h1>
+  <div class="contact">
+    <span>Bangalore, India</span>
+    <span>krdheenappan31294@gmail.com</span>
+    <span>+91 86681 41218</span>
+    <span><a href="https://www.linkedin.com/in/krishna-raj-dheenappan-9234b4206">linkedin.com/in/krishna-raj-dheenappan-9234b4206</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p>
+    Frontend engineer with 8+ years building React and Angular applications across
+    AdTech and EdTech. Drove the platform-wide Angular 9 &rarr; 15 migration of
+    Operative's AOS ad-sales platform, designed its Micro Frontend architecture,
+    and cut application load time by ~35% through state, API, and rendering
+    refactors. Sets frontend architecture direction, owns code-quality standards,
+    and mentors engineers across the team.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <table class="skills">
+    <tr><td class="label">Languages</td><td>TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</td></tr>
+    <tr><td class="label">Frameworks</td><td>React.js, Angular (9&ndash;15), RxJS, NgRx, Redux</td></tr>
+    <tr><td class="label">UI / Styling</td><td>Material UI, PrimeNG, Tailwind CSS, Bootstrap</td></tr>
+    <tr><td class="label">Architecture</td><td>Micro Frontends (MFE), REST APIs, Broadcast Channel API</td></tr>
+    <tr><td class="label">Testing</td><td>Jest, Jasmine</td></tr>
+    <tr><td class="label">Tooling</td><td>Webpack, Babel, npm, Git, Stencil JS</td></tr>
+    <tr><td class="label">AI Tooling</td><td>GitHub Copilot, Cursor</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+
+  <div class="role">
+    <h3>Senior Software Engineer &mdash; Operative Media</h3>
+    <span class="dates">04/2022 &ndash; Present</span>
+  </div>
+  <ul>
+    <li>Own frontend architecture for the <strong>AOS</strong> ad-sales platform (React.js + Angular), shipping business-critical modules for content management, advertising workflows, and analytics.</li>
+    <li>Drove the platform-wide <strong>Angular 9 &rarr; 15</strong> migration &mdash; modernizing the stack with no regressions and improving long-term maintainability.</li>
+    <li>Cut application load time by <strong>~35%</strong> by eliminating redundant API calls and refactoring state management and rendering hot paths.</li>
+    <li>Designed and rolled out a <strong>Micro Frontend</strong> architecture, enabling product teams to build and deploy modules independently; built cross-window and cross-module communication on the <strong>Broadcast Channel API</strong>, replacing brittle event hacks across the platform.</li>
+    <li>Partner with Product and Engineering on backlog grooming, story scoping, and release planning &mdash; breaking down epics, unblocking the team mid-sprint, and triaging production defects.</li>
+    <li>Set code-quality and architecture standards, run code and design reviews, and mentor engineers across the team &mdash; raising review throughput and reducing post-release defects.</li>
+  </ul>
+
+  <div class="role">
+    <h3>Senior UI Developer &mdash; Happiest Minds</h3>
+    <span class="dates">04/2021 &ndash; 05/2022</span>
+  </div>
+  <ul>
+    <li>Built <strong>SUCCESSMAKER</strong>, a responsive Learning Management System in <strong>Angular 11</strong>, <strong>RxJS</strong>, and <strong>ngx-translate</strong> &mdash; delivering a multi-locale, internationalised UI for learners.</li>
+    <li>Designed a library of framework-agnostic web components in <strong>Stencil JS</strong>, consumed by both Angular and React apps &mdash; eliminating duplicated UI code across product teams.</li>
+    <li>Shipped <strong>Practice Generator</strong>, a worksheet authoring tool built with <strong>NgRx Store</strong>, enabling content teams to assemble and publish practice material at scale.</li>
+  </ul>
+
+  <div class="role">
+    <h3>Front End Developer &mdash; Accenture</h3>
+    <span class="dates">05/2017 &ndash; 04/2021</span>
+  </div>
+  <ul>
+    <li><strong>COX Communications</strong> &mdash; worked as a <strong>DevOps Engineer</strong> (2017 &ndash; 2018) in the Telecom BSS and Retail domain.</li>
+    <li>Owned BSS activities including production deployments (manual and Jenkins), patching, validations, restarts, and monitoring of applications and servers.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p>
+    <strong>Bachelor of Engineering, Computer Science</strong><br />
+    Kongu Engineering College &nbsp;&bull;&nbsp; 2013 &ndash; 2017
+  </p>
+</section>
+
+</main>
+</body>
+</html>
