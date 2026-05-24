@@ -5,10 +5,10 @@
 <title>Krishnaraj D — Senior Frontend Engineer</title>
 <style>
   :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --accent: #0b5fff;
-    --rule: #d0d4dc;
+    --ink: #1f2937;
+    --muted: #4b5563;
+    --accent: #4FC3F7;
+    --accent-strong: #29B6F6;
   }
   @page { size: A4; margin: 12mm 14mm; }
   * { box-sizing: border-box; }
@@ -17,81 +17,98 @@
     padding: 0;
     background: #fff;
     color: var(--ink);
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-family: "Source Sans Pro", "Inter", "Segoe UI", Arial, sans-serif;
     font-size: 10pt;
-    line-height: 1.32;
+    line-height: 1.35;
   }
   main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 16mm 14mm 14mm;
+    padding: 14mm 14mm;
+  }
+  header {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent);
+    margin-bottom: 10px;
   }
   header h1 {
-    margin: 0 0 4px;
-    font-size: 21pt;
+    margin: 0 0 6px;
+    font-size: 22pt;
+    font-weight: 800;
     letter-spacing: 0.4px;
+    color: var(--ink);
     display: flex;
     align-items: baseline;
-    gap: 12px;
+    gap: 14px;
     flex-wrap: wrap;
   }
   header h1 .title {
-    font-size: 12pt;
-    color: var(--accent);
-    font-weight: 600;
-    letter-spacing: 0.3px;
-  }
-  header h1 .title::before {
- 
-    color: var(--rule);
+    font-size: 14pt;
+    color: var(--ink);
+    font-weight: 400;
+    letter-spacing: 0.2px;
   }
   header .contact {
-    margin: 0 0 4px;
-    font-size: 9.5pt;
-    color: var(--muted);
+    margin: 0;
+    font-size: 10pt;
+    color: var(--ink);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
   }
-  header .contact span + span::before {
-    content: "  \2022  ";
-    color: var(--rule);
+  header .contact > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
-  hr {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 8px 0;
+  header .contact .icon {
+    width: 13px;
+    height: 13px;
+    color: var(--accent-strong);
+    flex-shrink: 0;
+  }
+  header .contact a {
+    color: inherit;
+    text-decoration: none;
   }
   h2 {
-    font-size: 10pt;
+    font-size: 12pt;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
-    color: var(--accent);
-    margin: 10px 0 4px;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 2px;
+    letter-spacing: 1.2px;
+    color: var(--ink);
+    font-weight: 700;
+    margin: 12px 0 6px;
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 3px;
   }
   h3 {
-    font-size: 10.5pt;
+    font-size: 11pt;
+    font-weight: 700;
     margin: 0;
+  }
+  h3 .company {
+    font-weight: 400;
   }
   .role {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     gap: 12px;
-    margin: 6px 0 2px;
+    margin: 10px 0 7px;
     page-break-inside: avoid;
   }
   .role .dates {
-    font-size: 9.5pt;
+    font-size: 10pt;
     color: var(--muted);
     white-space: nowrap;
   }
-  ul { margin: 2px 0 4px; padding-left: 18px; }
-  li { margin: 1px 0; }
-  p { margin: 2px 0; }
+  ul { margin: 3px 0 6px; padding-left: 18px; }
+  li { margin: 5px 0; }
+  section p { text-align: justify; margin: 2px 0; }
   section { page-break-inside: avoid; }
-  .skills { width: 100%; border-collapse: collapse; font-size: 9.75pt; }
-  .skills td { padding: 2px 8px 2px 0; vertical-align: top; }
-  .skills td.label { width: 110px; color: var(--muted); font-weight: 600; }
+  .skills { width: 100%; border-collapse: collapse; font-size: 10pt; }
+  .skills td { padding: 3px 8px 3px 0; vertical-align: top; }
+  .skills td.label { width: 110px; color: var(--accent-strong); font-weight: 700; }
   .placeholder {
     color: #b35c00;
     background: #fff5e6;
@@ -110,12 +127,24 @@
 <main>
 
 <header>
-  <h1>Krishnaraj D<span class="title">Senior Frontend Engineer</span></h1>
+  <h1>KRISHNARAJ D<span class="title">Senior Frontend Engineer</span></h1>
   <div class="contact">
-    <span>Bangalore, India</span>
-    <span>krdheenappan31294@gmail.com</span>
-    <span>+91 86681 41218</span>
-    <span><a href="https://www.linkedin.com/in/krishna-raj-dheenappan-9234b4206">linkedin.com/in/krishna-raj-dheenappan-9234b4206</a></span>
+    <span>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      krdheenappan31294@gmail.com
+    </span>
+    <span>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.1.96.27 1.9.5 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.23 1.85.4 2.81.5A2 2 0 0 1 22 16.92z"/></svg>
+      +91 86681 41218
+    </span>
+    <span>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Bangalore, India
+    </span>
+    <span>
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      <a href="https://www.linkedin.com/in/krishna-raj-dheenappan-9234b4206">linkedin.com/in/krishna-raj-dheenappan-9234b4206</a>
+    </span>
   </div>
 </header>
 
@@ -135,7 +164,7 @@
   <h2>Skills</h2>
   <table class="skills">
     <tr><td class="label">Languages</td><td>TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</td></tr>
-    <tr><td class="label">Frameworks</td><td>React.js, Angular (9&ndash;15), RxJS, NgRx, Redux</td></tr>
+    <tr><td class="label">Frameworks</td><td>React.js, Angular (9&ndash;17), RxJS, NgRx, Redux</td></tr>
     <tr><td class="label">UI / Styling</td><td>Material UI, PrimeNG, Tailwind CSS, Bootstrap</td></tr>
     <tr><td class="label">Architecture</td><td>Micro Frontends (MFE), REST APIs, Broadcast Channel API</td></tr>
     <tr><td class="label">Testing</td><td>Jest, Jasmine</td></tr>
@@ -148,7 +177,7 @@
   <h2>Work Experience</h2>
 
   <div class="role">
-    <h3>Senior Software Engineer &mdash; Operative Media</h3>
+    <h3>Senior Software Engineer, <span class="company">Operative Media</span></h3>
     <span class="dates">04/2022 &ndash; Present</span>
   </div>
   <ul>
@@ -161,7 +190,7 @@
   </ul>
 
   <div class="role">
-    <h3>Senior UI Developer &mdash; Happiest Minds</h3>
+    <h3>Senior UI Developer, <span class="company">Happiest Minds</span></h3>
     <span class="dates">04/2021 &ndash; 05/2022</span>
   </div>
   <ul>
@@ -171,7 +200,7 @@
   </ul>
 
   <div class="role">
-    <h3>Front End Developer &mdash; Accenture</h3>
+    <h3>Front End Developer, <span class="company">Accenture</span></h3>
     <span class="dates">05/2017 &ndash; 04/2021</span>
   </div>
   <ul>

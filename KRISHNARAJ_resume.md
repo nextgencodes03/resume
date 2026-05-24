@@ -16,7 +16,7 @@ Frontend engineer with 8+ years building React and Angular applications across A
 | Area | Tools |
 | --- | --- |
 | Languages | TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS |
-| Frameworks | React.js, Angular (9–15), RxJS, NgRx, Redux |
+| Frameworks | React.js, Angular (9–17), RxJS, NgRx, Redux |
 | UI / Styling | Material UI, PrimeNG, Tailwind CSS, Bootstrap |
 | Architecture | Micro Frontends (MFE), REST APIs, Broadcast Channel API |
 | Testing | Jest, Jasmine |
